@@ -40,6 +40,7 @@ Bem-vindo à API Book Store! Esta API foi desenvolvida utilizando Laravel e PHP,
 | Método | Rota   | Descrição             |
 | ------ | ------ | --------------------- |
 | `POST` | /api/login | Autentica um usuário. |
+| `POST` | /api/logout | Desloga o usuário. |
 
 ### Livros
 | Método | Rota               | Descrição                                |
