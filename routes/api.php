@@ -6,10 +6,10 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\StoreController;
 
-// Rota para login
+// Route to authentication
 Route::post('/login', [AuthController::class, 'login']);
 
-// Grupo de rotas que requerem autenticação
+// Authentication-protected route group
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::apiResource('/books', BookController::class);
